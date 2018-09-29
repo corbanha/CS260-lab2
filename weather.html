@@ -1,0 +1,56 @@
+<html>
+    <head lang="en">
+        <meta charset="utf-8">
+    
+        <!-- This is for bootstrap, to make the site look good on mobile -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            
+        <title>Get the Weather and browse StackOverflow at the same time!</title>
+    
+        <!-- Bring in Stylesheets -->
+        <!-- Linking in Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- Our stylesheet -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <div id="main">
+            <h1>Check the Weather and Search StackOverflow at the same time!</h1>
+            <h2>Enter a city below to check the weather:</h2>
+            <form>
+            Enter A Utah City: <input type="text" id="cityField" value=""><br>
+            Sponsored Utah&reg; Suggestions: <span id="txtHint">Empty</span><br>
+            <input id="weatherButton" type="button" value="Check the Weather!">
+            </form>
+            <p>City</p>
+            <textarea id="displayCity">No City</textarea>
+            <p>Current Weather:</p>
+            <img id="weatherIcon" src=""></img>
+            <div id="weather">No weather</div>
+            
+            <h2 style="margin-top: 5vw;">Search StackOverflow here!:</h2>
+            <form>
+                Enter a search term: <input type="text" id="searchField" value=""><br>
+                <input type="button" value="Search!" id="searchButton">
+                
+            </form>
+            
+            <div id="searchResults"></div>
+        </div>
+        
+        
+        
+        
+        <!-- Bring in the scripts -->
+        <!-- Bringing in JQuery code -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+        <!-- Bootstrap Javascript code -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+        <!-- Our Code -->
+        <script src="code.js"></script>
+    </body>
+</html>
